@@ -1,0 +1,14 @@
+{
+  "*.js": [
+    "npm run lint:fix",
+    "git add"
+  ],
+  "src/**/*.{json,css}": [
+    "prettier --write",
+  "git add"
+  ],
+  "*.md": [
+    "prettier --write",
+  "git add"
+  ]
+}
