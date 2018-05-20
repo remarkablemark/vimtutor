@@ -1,18 +1,14 @@
-# web-app-template
+# vimtutor
 
-A framework-agnostic web app template. It's a stripped down version of [create-react-app](https://github.com/facebookincubator/create-react-app) in which dependencies like React are removed.
-
-[Demo](https://remarkablemark.github.io/web-app-template/)
+The browser version of [vimtutor](https://remarkablemark.org/vimtutor/).
 
 ## Installation
 
 Clone repository:
 
 ```sh
-git clone https://github.com/remarkablemark/web-app-template.git myapp
-cd myapp
-rm -rf .git
-git init
+git clone https://github.com/remarkablemark/vimtutor
+cd vimtutor
 ```
 
 Install dependencies:
@@ -25,23 +21,7 @@ npm install
 yarn
 ```
 
-Make initial commit (but make sure to modify files like `package.json` beforehand):
-
-```sh
-git add .
-git commit -m "chore: first commit"
-```
-
-Notice that the commit message follows the [Conventional Commits](https://conventionalcommits.org) format. This will help with releasing.
-
-[Push to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) or another remote:
-
-```sh
-git remote add origin <remote-repository-url>
-git push origin -u origin master
-```
-
-## Scripts
+## Run
 
 Start development server:
 
@@ -63,19 +43,9 @@ npm run build
 yarn build
 ```
 
-Release:
+## Release
 
-```sh
-# with npm
-npm run build
-
-# with yarn
-yarn build
-```
-
-Deploy:
-
-Before deploying, make sure the `deploy` script and the `homepage` field in `package.json` are correct. The current setup deploys to [GitHub Pages](https://pages.github.com) by pushing the `build/` directory to the remote's `gh-pages` branch.
+Deploy production build to [GitHub Pages](https://pages.github.com):
 
 ```sh
 # with npm
@@ -85,46 +55,17 @@ npm run deploy
 yarn deploy
 ```
 
-## Environment Variables
+## Acknowledgements
 
-Environment variables work the same as [create-react-app](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-custom-environment-variables) except custom environment variables begin with `APP_` instead of `REACT_APP_`.
+Vim Tutor:
 
-## Test
+> This tutorial was written by Michael C. Pierce and Robert K. Ware,
+> Colorado School of Mines using ideas supplied by Charles Smith,
+> Colorado State University. E-mail: bware@mines.colorado.edu.
+>
+> Modified for Vim by Bram Moolenaar.
 
-There are no tests in the template, just linting:
+Code Editor:
 
-```sh
-# with npm
-npm run lint
-npm run lint:fix
-
-# with yarn
-yarn lint
-yarn lint:fix
-```
-
-Feel free to add a [testing framework](https://github.com/sorrycc/awesome-javascript#testing-frameworks).
-
-## Layout
-
-Directory structure (with files like `README.md` and `package.json` omitted):
-
-```
-.
-├── config
-│   ├── env.js
-│   ├── paths.js
-│   ├── webpack.config.dev.js
-│   ├── webpack.config.prod.js
-│   └── webpackDevServer.config.js
-├── public
-│   ├── index.html # html template
-│   └── manifest.json
-├── scripts
-│   ├── build.js
-│   └── start.js
-└── src
-    ├── index.css
-    ├── index.js  # entry js file
-    └── registerServiceWorker.js
-```
+* [CodeMirror](https://codemirror.net)
+* [Vim bindings](https://codemirror.net/demo/vim.html)
