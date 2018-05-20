@@ -1,7 +1,7 @@
 {
-  "name": "web-app-template",
+  "name": "vimtutor",
   "version": "0.0.1",
-  "description": "A template for framework-agnostic web apps.",
+  "description": "The browser version of vimtutor.",
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
     "build": "node scripts/build",
@@ -11,22 +11,21 @@
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "npm run lint -- --fix",
     "precommit": "lint-staged",
-    "release": "standard-version --no-verify",
+    "release": "standard-version",
     "start": "node scripts/start"
   },
-  "homepage": "https://remarkablemark.github.io/web-app-template/",
+  "homepage": "https://remarkablemark.org/vimtutor/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/remarkablemark/web-app-template"
+    "url": "https://github.com/remarkablemark/vimtutor"
   },
   "bugs": {
-    "url": "https://github.com/remarkablemark/web-app-template/issues"
+    "url": "https://github.com/remarkablemark/vimtutor/issues"
   },
   "keywords": [
-    "web",
-    "app",
-    "template",
-    "boilerplate"
+    "codemirror",
+    "vim",
+    "vimtutor"
   ],
   "devDependencies": {
     "@commitlint/cli": "6.2.0",
