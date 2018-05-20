@@ -1,6 +1,6 @@
 {
   "name": "vimtutor",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The browser version of vimtutor.",
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
