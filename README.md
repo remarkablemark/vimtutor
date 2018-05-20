@@ -128,7 +128,3 @@ Directory structure (with files like `README.md` and `package.json` omitted):
     ├── index.js  # entry js file
     └── registerServiceWorker.js
 ```
-
-## License
-
-[MIT](LICENSE)
