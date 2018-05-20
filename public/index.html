@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
-    <title>Web App Template</title>
-    <meta name="description" content="A framework-agnostic template for web apps inspired by create-react-app.">
+    <title>vimtutor</title>
+    <meta name="description" content="The browser version of vimtutor.">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
 
@@ -28,6 +28,28 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+    <!--
+      CodeMirror styles.
+    -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/dialog/dialog.min.css">
+    <style>
+      body {
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+      textarea {
+        display: none;
+      }
+      .CodeMirror {
+        height: 100%;
+      }
+      .CodeMirror-dialog {
+        position: fixed;
+      }
+    </style>
   </head>
 
   <body>
@@ -38,14 +60,22 @@
     <![endif]-->
 
     <noscript>
-      You need to enable JavaScript to run this app.
+      You need to enable JavaScript to run vimtutor.
     </noscript>
 
     <!--
-      Placeholder element.
+      CodeMirror editor where vimtutor is rendered.
     -->
-    <div id="app"></div>
+    <textarea id="editor"></textarea>
 
+    <!--
+      CodeMirror scripts.
+    -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/dialog/dialog.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/search/searchcursor.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/edit/matchbrackets.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/keymap/vim.min.js"></script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

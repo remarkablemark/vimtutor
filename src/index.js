@@ -1,11 +1,16 @@
-import './index.css';
 import registerServiceWorker from './registerServiceWorker';
+import vimtutor from './vimtutor.txt';
 
-document.getElementById('app').innerHTML = `
-  <h1>Welcome to <code>web-app-template</code>.</h1>
-  <a href="https://github.com/remarkablemark/web-app-template">
-    View source
-  </a>
-`;
+const editorElement = document.getElementById('editor');
+editorElement.value = vimtutor;
+
+window.CodeMirror.fromTextArea(editorElement, {
+  autofocus: true,
+  keyMap: 'vim',
+  inputStyle: 'contenteditable',
+  lineNumbers: true,
+  matchBrackets: true,
+  mode: 'text/plain',
+});
 
 registerServiceWorker();
